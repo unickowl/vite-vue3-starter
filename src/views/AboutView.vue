@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useHead({
+  title: 'My awesome site | About'
+})
+</script>
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>
