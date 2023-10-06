@@ -1,17 +1,29 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 defineProps<{
   msg: string
 }>()
+
+const { t, locale } = useI18n()
+
+function handleLocaleChange(lang: string) {
+  locale.value = lang
+}
 </script>
 
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
+    <p>{{ t('hello') }}</p>
     <h3>
       You’ve successfully created a project with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
     </h3>
+    <div class="flex gap-4 my-4">
+      <button @click="handleLocaleChange('en')">En</button>
+      <button @click="handleLocaleChange('zh_tw')">zhTW</button>
+    </div>
   </div>
 </template>
 
