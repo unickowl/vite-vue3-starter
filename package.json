@@ -1,5 +1,5 @@
 {
-  "name": "paynow-admin",
+  "name": "vite-vue3-starter",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,9 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "@unhead/vue": "^1.7.4",

@@ -1,68 +1,41 @@
-# paynow-admin
+# Vite + Vue3 starter
 
-This template should help get you started developing with Vue 3 in Vite.
+![node-v](https://img.shields.io/badge/node-%5E20-brightgreen?style=flat)
 
-## Recommended IDE Setup
+## Start 🎯
+```
+npx degit unickowl/vite-vue3-starter <project_name>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+cd <project_name>
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-yarn
+yarn install
 ```
 
-### Compile and Hot-Reload for Development
+## Usage 📖
+- Development
 
-```sh
+local serve http://localhost:9763
+```
 yarn dev
 ```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
+- Build
+```
 yarn build
 ```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-yarn test:unit
+preview build result
+```
+yarn preview
 ```
 
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-yarn test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-yarn build
-yarn test:e2e
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+## Prepacks 🧩
+- [vite4](https://vitejs.dev/)
+- [vue3](https://vuejs.org/)
+- [typescript](https://www.typescriptlang.org/)
+- [vue-i18n](https://vue-i18n.intlify.dev/)
+- [unocss](https://unocss.dev/interactive/)
+- [material design icons](https://icones.js.org/collection/mdi)
+- [pinia](https://pinia.vuejs.org/)
+- [vueuse](https://vueuse.org/)
+- [unhead](https://unhead.unjs.io/)
+- [vite-plugin-vue-devtools](https://github.com/webfansplz/vite-plugin-vue-devtools)
+- [vitest](https://vitest.dev/)
