@@ -2,7 +2,9 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.json", "auto-imports.d.ts"],
   "exclude": ["src/**/__tests__/*"],
+  "strict": true,
   "compilerOptions": {
+    "strict": true,
     "composite": true,
     "baseUrl": ".",
     "paths": {
